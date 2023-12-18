@@ -243,12 +243,12 @@
     height: fit-content;
   }
   .footer-email {
-    background-color: red;
-    padding: 10px 4px;
+    width: 18rem !important;
     height: 30px;
+    background-color: green;
   }
   .email-footer {
-    width: 5rem;
+    width: fit-content;
   }
   .btn-send {
     padding: 1px 10px;
