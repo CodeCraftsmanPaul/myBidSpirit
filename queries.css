@@ -1,0 +1,377 @@
+/* ***********************  */
+/* BELOW 1344PX (FOR SMALLER COMPUITER) */
+/* **************** ********/
+
+/* QUERY FOR CONTACT PAGE */
+@media (max-width: 84em) {
+  .contact-count {
+    margin-left: -100rem;
+  }
+  .welcome {
+    margin-right: 95rem;
+    font-size: 2rem;
+  }
+  .side__nav {
+    margin-left: -40rem;
+  }
+  .contact-info {
+    height: fit-content;
+  }
+  .contact-form {
+    height: fit-content;
+  }
+
+  .line-through {
+    width: 12%;
+    top: 47%;
+    left: 44%;
+  }
+  .image-none {
+    display: none;
+  }
+  .bid-btn {
+    margin: 30px 0 0 60rem;
+  }
+  .text-remove {
+    visibility: hidden;
+  }
+  /*///////////// home page//////// */
+
+  .home-msg {
+    margin-right: 90rem;
+  }
+  .home-count {
+    margin-left: -110rem;
+  }
+  .home-header {
+    height: 65vh;
+  }
+  .carousel-header_text {
+    width: 70%;
+    margin: 20rem 15rem;
+    height: 35vh;
+  }
+  .scroll__down-btn {
+    margin-top: -20rem !important;
+  }
+  .scroll__down-btn2 {
+    margin: 10rem 0;
+  }
+  .art-items {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+  .art-img-1 {
+    padding-top: 1rem;
+  }
+  .auction-header {
+    height: 50vh;
+  }
+  .sponsored-auction {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ***********************  */
+/* BELOW 1200PX (LANDSCAPE TABLET) */
+/* **************** ********/
+
+/* FOR CONTACT PAGE */
+@media (max-width: 75em) {
+  .welcome {
+    margin-right: 60rem;
+  }
+
+  .contact-count {
+    margin-left: 5rem;
+  }
+  .contact {
+    height: 30vh;
+  }
+  .footer-contact {
+    padding: 40px 20px;
+    height: fit-content;
+  }
+}
+
+/* ***********************  */
+/* BELOW 944PX (tablet) */
+/* **************** ********/
+/* FOR CONTACT PAGE*/
+@media (max-width: 59em) {
+  .text-remove {
+    opacity: 1;
+    visibility: visible;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 50%;
+  }
+  .welcome {
+    margin-left: -40rem;
+  }
+
+  .contact-count {
+    margin-left: -60rem;
+  }
+
+  .contact-info {
+    height: 55vh;
+  }
+  .footer-contact {
+    padding: 40px 20px;
+    height: fit-content;
+  }
+  .contact {
+    height: 30vh;
+  }
+  .footer-email {
+    padding: 10px 5px;
+    height: 30px;
+  }
+  .btn-send {
+    padding: 1px 10px;
+    height: 30px;
+  }
+  .gallery-header {
+    height: 50vh;
+  }
+  .header-h1 {
+    font-size: 5rem;
+  }
+  .contact-header {
+    height: 60vh;
+  }
+  /* about us */
+  .name {
+    height: 60vh;
+    object-fit: cover;
+    margin-bottom: 4rem;
+  }
+  .leader-container {
+    height: 90%;
+  }
+  .names {
+    margin-top: -7rem;
+  }
+  /*///////////// home page//////// */
+
+  .sponsored-auction-title h1 {
+    font-size: 5rem;
+  }
+  .auction-now {
+    margin: 0 0 0 50rem;
+    font-size: 2.2rem;
+    width: 25%;
+  }
+  .bid-text,
+  .price {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+/* ***********************  */
+/* BELOW 704PX (small tablet) */
+/* **************** ********/
+/* FOR CONTACT PAGE */
+@media (max-width: 52em) {
+  .welcome {
+    margin-left: -39rem;
+  }
+
+  .footer-contact {
+    height: fit-content;
+    padding: 40px 20px;
+  }
+
+  .bid-btn {
+    margin: 30px 0 0 40rem;
+  }
+
+  .auction-now {
+    margin: 0 0 0 50rem;
+    font-size: 2.1rem;
+    width: 25%;
+  }
+  .bid-text,
+  .price {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  .sponsored-auction-title h1 {
+    font-size: 4rem;
+  }
+}
+
+/* ***********************  */
+/* BELOW 544PX (phone) */
+/* **************** ********/
+/* 550 / 16 =34 */
+@media (max-width: 34em) {
+  .logo {
+    height: 4rem;
+  }
+
+  .welcome {
+    margin-right: -16rem;
+    font-size: 1.2rem;
+
+    width: 30%;
+  }
+  .contact-count {
+    margin-left: -18rem;
+    font-size: 1rem;
+    padding: 4px;
+  }
+  .line-through {
+    width: 20%;
+    top: 40%;
+    left: 40%;
+    background-color: #333;
+  }
+  .icon-box {
+    margin-top: -0.1rem !important;
+    padding: 2rem 0;
+  }
+  .contact-info {
+    height: fit-content;
+  }
+  .contact-form {
+    height: fit-content;
+  }
+  .contact {
+    height: fit-content;
+  }
+  .footer-email {
+    padding: 10px 5px;
+    height: 30px;
+  }
+  .btn-send {
+    padding: 1px 10px;
+    height: 30px;
+  }
+  .bid-btn {
+    margin: 10px 0 0 30rem;
+  }
+  .auction-h1 {
+    font-size: 4rem !important;
+  }
+
+  /* about us */
+  .name {
+    height: fit-content;
+
+    object-fit: cover;
+    margin-bottom: 6rem;
+  }
+  .leader-container {
+    height: 90%;
+  }
+  .leader-job {
+    margin: 12rem 0 5rem;
+  }
+  /* /////////homepage //////*/
+
+  #home-msg {
+    width: 30%;
+    margin-left: -35rem;
+  }
+  #home-logo {
+    height: 4rem;
+  }
+  .counter-sm {
+    width: 1rem;
+    height: 1rem;
+  }
+  .menu-home-nav {
+    width: 2rem;
+    margin-left: 6rem;
+  }
+  .home-count {
+    font-size: 0.8rem;
+    margin-left: -50rem;
+  }
+
+  .carousel-header_text {
+    width: 100%;
+    margin: 0rem;
+    padding: 12rem 4rem 0;
+    height: fit-content;
+  }
+  .carousel-header_1 h1,
+  .carousel-header_2 h1,
+  .carousel-header_3 h1 {
+    font-size: 20px;
+  }
+  .carousel-header_1 p,
+  .carousel-header_2 p,
+  .carousel-header_3 p {
+    font-size: 12px;
+  }
+  .btn-auction {
+    margin-top: 2rem;
+    width: 12rem;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+  }
+
+  .btn-auction:hover {
+    width: 13rem;
+  }
+
+  /* scroll-down-btn */
+  .scroll__down-btn,
+  .scroll__down-btn2 {
+    display: none;
+  }
+
+  .art-items {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  .category-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-left: 30px;
+  }
+
+  .auction-now {
+    margin: 0 0 4rem 26rem;
+    font-size: 1.6rem;
+  }
+  .bid-text,
+  .price {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .sponsored-auction-title h1,
+  .auction-header h1 {
+    font-size: 3rem;
+  }
+  .buy-btn {
+    margin: 0 0 2rem 26rem;
+  }
+  .buy-auction {
+    margin: 0 0 0rem 27rem;
+  }
+  .footer-contact {
+    padding: 40px 20px;
+    height: fit-content;
+  }
+  .layout-summary {
+    margin-right: 24px;
+  }
+  .text-remove {
+    font-size: 1.2rem;
+  }
+  .login__input {
+    width: 10rem;
+  }
+  .login__input:focus {
+    outline: none;
+    width: 12rem;
+    border: 1px solid #ccc;
+  }
+}

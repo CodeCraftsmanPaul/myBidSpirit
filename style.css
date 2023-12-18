@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  height: 100vh;
+  background-color: #f8f9fa;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.welcome {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: none;
+}
+
+.logo {
+  height: 6.35rem;
+}
+.text-remove {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.login {
+  display: flex;
+}
+
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  text-align: center;
+  width: 16rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.login__input:focus {
+  outline: none;
+  width: 20rem;
+  border: 1px solid #ccc;
+}
+
+.login__input::placeholder {
+  color: #bbb;
+}
+
+.login__btn {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: #777;
+}
+.count__container {
+  display: none;
+  background-color: #a6c4b1;
+  padding: 8px 6px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  align-items: center;
+  margin-left: 70rem;
+  cursor: pointer;
+}
+.side__nav {
+  display: none;
+}
+.canvas-bg {
+  background-color: #a6c4b1 !important;
+  color: white !important;
+  font-size: 2rem !important;
+}
+.nav-item {
+  margin: 20px 0px;
+}
+
+.form-nav {
+  width: 70% !important;
+  margin-left: 8rem;
+  height: 3rem !important;
+  border-radius: 20px;
+  font-size: 1.5rem !important;
+  font-family: "Poppins", sans-serif;
+}
+#dropdown-gallery {
+  font-size: 2rem !important;
+  background-color: #a6c4b1 !important;
+  border: none !important;
+  margin: 20px 0px;
+}
+.nav-item:hover,
+#dropdown-gallery:hover {
+  color: #495057 !important;
+  /* text-decoration: #fff underline; */
+  /* text-underline-offset: 10px; */
+}
+.dropdown-gallery-menu {
+  font-size: 1.4rem !important;
+}
+.logo-canvas {
+  width: 40%;
+  height: 40%;
+  margin: 10px 0 0 10px;
+}
+/* /////////////////////////////////////////// 
+     MAIN SETION
+ ///////////////////////////////////////////// */
+main {
+  /* NOTE This creates the fade in/out anumation */
+  opacity: 0;
+  transition: all 2s;
+}
+
+/* /////////////////////////////////////////// 
+     carousel header SETION
+ ///////////////////////////////////////////// */
+.carousel-header_1 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/header5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-header_2 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/header3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-header_3 {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/header2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ////////////////////////// 
+ reusable style for the header  */
+.carousel-header_text {
+  width: 50%;
+  margin: 20rem;
+  padding-top: 2rem;
+  height: fit-content;
+}
+.carousel-header_1 h1,
+.carousel-header_2 h1,
+.carousel-header_3 h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.carousel-header_1 p,
+.carousel-header_2 p,
+.carousel-header_3 p {
+  font-size: 20px;
+  margin: 12px 0;
+}
+.btn-auction {
+  margin-top: 2rem;
+  width: 14rem;
+  padding: 10px 25px;
+  font-size: 1.6rem;
+  border: none;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.6s;
+  background: linear-gradient(90deg, #a6c4b1 0%, #a6c4b1 0%);
+  background-size: 200% 100%;
+  background-position: right;
+  font-weight: 500;
+}
+
+.btn-auction:hover {
+  width: 16rem;
+  color: #111;
+  background: linear-gradient(90deg, #a6c4b1 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.6s ease-in-out;
+  border: none;
+}
+
+/* scroll-down-btn */
+.scroll__down-btn {
+  margin-top: 8rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.scroll__down-btn2 {
+  margin-top: 18rem;
+  margin-left: 16rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.down_btn {
+  animation: popUpDown 2s ease infinite;
+  cursor: pointer;
+}
+@keyframes popUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* /////////////////////////////////// 
+ CATELOG SECTION 
+//////////////////////////////////////// */
+
+.title-container {
+  position: relative;
+  height: 10rem;
+}
+
+.line-through {
+  position: absolute;
+  width: 12%;
+  height: 1px; /* to Adjust the line thickness as needed */
+  background-color: black;
+  top: 45%;
+  left: 44%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.category-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+.category-item_art,
+.category-item_antq,
+.category-item_coltb,
+.category-item_furnt {
+  width: 80% !important;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 2px solid #c2c2c2;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.category-item_art a,
+.category-item_antq a,
+.category-item_coltb a,
+.category-item_furnt a {
+  text-decoration: none;
+  color: #111;
+}
+
+/* category items */
+.category-item_art:hover {
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/Art/img-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .link {
+    color: white;
+  }
+}
+.category-item_furnt:hover {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/furniture/pexels-martin-péchy-1866149.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .link {
+    color: white;
+  }
+}
+.category-item_antq:hover {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/antiques/pexels-giallo-859895.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .link {
+    color: white;
+  }
+}
+
+.category-item_coltb:hover {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/collectibles/pexels-rachel-claire-5865384.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .link {
+    color: white;
+  }
+}
+
+/*/////////////////// fine art */
+.art-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.hand-index {
+  width: auto;
+  height: 36rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.art-bg {
+  background-color: #f4f5fc;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.read-more img {
+  transition: transform 0.3s ease-out;
+}
+
+.read-more:hover img {
+  transform: scale(1.1);
+}
+.modal-txt {
+  padding: 10px;
+  font-size: 1.6rem;
+}
+.discription,
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.not-sold-btn,
+.buy-btn {
+  border: none;
+  padding: 4px 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  width: 8rem;
+  transition: all 0.6s;
+  background: linear-gradient(90deg, #a6c4b1 0%, #a6c4b1 0%);
+  background-size: 200% 100%;
+  background-position: left;
+  font-weight: 500;
+}
+.buy-btn {
+  margin-left: 40rem;
+  font-weight: 700 !important;
+}
+.not-sold-btn:hover,
+.buy-btn:hover {
+  color: #111 !important;
+  background: linear-gradient(90deg, #a6c4b1 50%, #fff 50%);
+  transition: background-position 0.6s ease-in-out;
+  background-position: right;
+  background-size: 200% 100%;
+  border: none;
+}
+.popout-bg {
+  background-color: #f4f5fc !important;
+}
+
+.auction-header {
+  margin-top: 12rem;
+  background-image: linear-gradient(rgba(0, 0, 1, 0.6), rgba(34, 34, 34, 0.6)),
+    url(images/breadcrumb-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: auto;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auction-header h1 {
+  font-size: 5rem;
+}
+
+/* /////////SPONSORED AUCTION*/
+.sponsored-auction-title {
+  background-color: #eaecf9;
+  height: 25vh;
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 30px;
+  color: #222;
+}
+.sponsored-auction-title h1 {
+  font-size: 3rem;
+}
+.sponsored-auction {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.sponsored-bg {
+  background-color: #f4f5fc;
+  height: 68vh;
+}
+
+#popular-mid-item {
+  background-color: #f4f5fc;
+  height: 78vh !important;
+}
+
+.bid-btn {
+  margin-left: 30rem;
+}
+.bid-text {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+/* sponsored effect */
+.sponsored-bg {
+  position: relative;
+}
+
+.read-more {
+  position: relative;
+  overflow: hidden;
+}
+/* effect for auction */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: height 0.5s; /* adjust the transition duration as needed */
+}
+/* effect for product category */
+.overlay-art {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+/* ///////////////Popular  auction*/
+.upcoming-auction {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: red;
+}
+.upcoming-item {
+  background-color: green;
+  /* background-color: #f4f5fc; */
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+/* ///////// section before footer//// */
+.summary-cont {
+  margin-top: 10rem !important;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.summary-text {
+  font-size: 1.6rem;
+}
+.summary-text h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.layout-summary {
+  background-color: #f4f5fc;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 5px 10px;
+}
+/* /////////////////////////////////////////// 
+     FOOTER
+ ///////////////////////////////////////////// */
+footer {
+  margin-top: 10rem;
+  padding-top: 5rem;
+  background-color: #728a7b;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  height: 60vh;
+}
+footer h5 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+footer a {
+  /* padding-bottom: 20px; */
+  color: #fff;
+  text-decoration: none;
+}
+.copyright {
+  margin-top: 4rem !important;
+}
+.contact {
+  line-height: 2;
+}
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-email {
+  background-color: #728a7b;
+  border-radius: 4px;
+  height: 40px;
+  border: 1px solid white;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+}
+.footer-email::placeholder {
+  color: white;
+}
+.btn-send {
+  padding: 4px 10px;
+  border: none;
+}
+.btn-send:hover {
+  background-color: #4f7e61;
+  color: white;
+}
+/* ////////////////scroll ticker// */
+#ticker-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #728a7b;
+  cursor: pointer;
+
+  color: #fff;
+  padding: 5px 0;
+}
+
+#ticker-content {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+marquee {
+  width: 100%;
+}

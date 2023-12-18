@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon2-removebg-preview.png" />
+    <title>BidSpirit</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat&family=Noto+Sans+Cypro+Minoan&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #f6f6f6;
+      }
+      .container-box {
+        background-color: #fff;
+        width: 60vw;
+        height: fit-content;
+        margin: 0 auto;
+      }
+      h6 {
+        font-weight: 600;
+      }
+      .lock {
+        background-color: #2cbf4b;
+      }
+      .bg-gray {
+        background-color: #f6f6f6;
+      }
+
+      .card-1 {
+        width: 29.5%;
+        background-color: white;
+        line-height: 2;
+      }
+
+      .discount {
+        color: red;
+      }
+      .USD {
+        font-size: 12px;
+      }
+      hr {
+        color: #ced4da;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      input {
+        width: 50%;
+        padding: 10px;
+        outline: none;
+        border: 2px solid #ced4da;
+        margin-left: 60px;
+        color: #495057;
+      }
+      input::placeholder {
+        color: #adb5bd;
+      }
+      #input-1 {
+        margin-left: 98px;
+      }
+      #input-2 {
+        margin-left: 134px;
+      }
+      #cvv {
+        width: 15%;
+      }
+      #exp {
+        width: 34%;
+      }
+      .amount {
+        font-size: 12px;
+        color: #adb5bd;
+      }
+      select {
+        width: 100%;
+        border: 2px solid #ced4da;
+        outline: none;
+        padding: 10px;
+        color: #495057;
+        background-color: #f6f6f6;
+      }
+      .submit {
+        background-color: #2cbf4b;
+        width: 50%;
+        color: #fff;
+      }
+      .submit:hover {
+        background-color: #fff;
+        color: #2cbf4b;
+        border: 2px solid #2cbf4b;
+      }
+      .cont {
+        background-color: #2cbf4b !important;
+      }
+      .dot {
+        border: 1px solid #2cbf4b;
+        border-radius: 20px;
+      }
+      .dot-gray {
+        background-color: #ced4da;
+        border-radius: 20px;
+      }
+      .card-green {
+        border: 2px solid #2cbf4b;
+      }
+      .dollar {
+        color: #fff;
+        background-color: #2cbf4b;
+        font-size: 25px;
+        padding: 2px 10px;
+        border-radius: 50%;
+      }
+      .visa {
+        color: #495057;
+      }
+      .step {
+        font-size: 14px;
+        font-weight: 500;
+        color: #495057;
+      }
+      label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #495057;
+      }
+      @media (max-width: 64em) {
+        .container-box {
+          width: 90vw;
+        }
+      }
+      @media (max-width: 36em) {
+        .container-box {
+          width: 100%;
+        }
+        .visa-container {
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .card-1 {
+          width: 80%;
+        }
+        .form {
+          gap: 20px;
+        }
+        input {
+          width: 40%;
+          padding: 10px;
+
+          border: 2px solid #ced4da;
+          margin-left: 10px;
+          color: #495057;
+        }
+
+        #input-1 {
+          margin-left: 20px;
+        }
+        #input-2 {
+          margin-left: 60px;
+        }
+        #cvv {
+          width: 15%;
+        }
+        #exp {
+          width: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-box my-5 py-2">
+      <section>
+        <div class="d-flex align-item-center">
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#208035"
+              class="bi bi-arrow-left-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+              />
+            </svg>
+          </a>
+          <h6 class="ms-3 py-2">Payment Options</h6>
+        </div>
+        <!-- ////bg-green////////// -->
+        <div class="col-sm-12 lock text-light py-3 d-flex align-items-center">
+          <span>
+            <svg
+              class="ms-5"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              style="fill: #fff"
+            >
+              <path
+                d="M12 2C9.243 2 7 4.243 7 7v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7c0-2.757-2.243-5-5-5zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7zm4 10.723V20h-2v-2.277a1.993 1.993 0 0 1 .567-3.677A2.001 2.001 0 0 1 14 16a1.99 1.99 0 0 1-1 1.723z"
+              ></path>
+            </svg>
+          </span>
+
+          <small class="ms-3">
+            Always check the url to ensure that your payment details are secured
+            with https
+          </small>
+        </div>
+        <!-- ////bg-green end////////// -->
+
+        <!-- ////card////// -->
+        <div class="container mt-4">
+          <div class="row">
+            <div class="d-flex">
+              <div class="col-sm-6 bg-gray pt-3 text-center">
+                <img src="images/visa.jpg" alt="" width="10%" />
+                <img
+                  src="images/mastercard.png"
+                  alt=""
+                  width="10%"
+                  class="ms-2"
+                />
+                <p class="pt-1 fw-bold">Book now</p>
+              </div>
+              <!--  -->
+              <div class="col-sm-6 bg-white text-center pt-2">
+                <img src="images/Flyp-_small.jpg" alt="" width="13%" />
+              </div>
+            </div>
+          </div>
+          <!-- ///// -->
+          <div class="bg-gray">
+            <p class="ms-5 pt-5 step">Step 1 - choose your card type</p>
+            <div class="">
+              <div class="row ms-4 px-1 visa-container">
+                <div
+                  class="card-1 bg-white ms-3 d-flex rounded pt-3 card-green"
+                >
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="#2cbf4b"
+                      class="bi bi-dot dot"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                  </div>
+                  <div class="ms-2">
+                    <img src="images/visa.png" alt="" width="30%" />
+                    <h6 class="ms-3 visa">Visa Credit</h6>
+                    <h6 class="ms-3 discount">
+                      5,00 <span class="USD">USD</span> (0.05%)
+                    </h6>
+                  </div>
+                </div>
+                <!-- ///////2//////// -->
+                <div class="card-1 bg-white ms-3 d-flex rounded pt-3">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="#adb5bd"
+                      class="bi bi-dot dot-gray"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                  </div>
+                  <div class="ms-3">
+                    <img src="images/master.png" alt="" width="16%" />
+                    <h6 class="ms-1 pt-1 visa">Master Credit</h6>
+                    <h6 class="ms-1 discount">
+                      5,00 <span class="USD">USD</span> (0.05%)
+                    </h6>
+                  </div>
+                </div>
+                <!-- /////3///// -->
+                <div class="card-1 bg-white ms-3 d-flex rounded pt-3">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="#adb5bd"
+                      class="bi bi-dot dot-gray"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                  </div>
+                  <div class="ms-3">
+                    <img
+                      src="images/visa-and-mastercard-logo-26.png"
+                      alt=""
+                      width="50%"
+                      height="25px"
+                    />
+                    <h6 class="ms-1 pt-1 visa">Visa/Mastercard Debit</h6>
+                    <h6 class="ms-1 discount">
+                      5,00 <span class="USD">USD</span> (0.05%)
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mx-4" />
+
+            <p class="ms-5 pt-3 step">Step 2 - Fill your card information</p>
+
+            <!-- ////forms////// -->
+            <div class="form ms-5">
+              <!--  -->
+              <div>
+                <label>Card Holder Name</label>
+                <input type="text" placeholder="Holder Name" id="input-1" />
+              </div>
+
+              <div>
+                <label>Card Number</label>
+                <input
+                  type="text"
+                  placeholder="0000 0000 0000 0000"
+                  id="input-2"
+                />
+              </div>
+
+              <div>
+                <label>Card Expire Date / CVV</label>
+
+                <input type="text" placeholder="MM/YY" id="exp" />
+                <input type="text" placeholder="cvv" id="cvv" class="ms-2" />
+              </div>
+              <!--  -->
+            </div>
+
+            <hr class="mx-4" />
+
+            <h5 class="ms-5 py-3">
+              <span class="dollar">$</span> 475.00 USD
+              <span class="amount">The total amount</span>
+            </h5>
+          </div>
+          <!--  -->
+          <hr class="mx-4" />
+          <!--  -->
+          <div class="container">
+            <select name="" class="select mb-5">
+              <option value="">Billing Address (Optional)</option>
+              <option value="">Sango Ota</option>
+              <option value="">Joju Road</option>
+              <option value="">High Court</option>
+              <option value="">Honda</option>
+              <option value="">none</option>
+            </select>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="text-center">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn submit"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Proceed
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Payment Confirmation
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <h5>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        fill="#238d3a"
+                        class="bi bi-check-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                        />
+                      </svg>
+                      payment successfull
+                    </h5>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="index.html">
+                      <button type="button" class="btn cont text-light">
+                        Continue
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/////////////card end/////////////  -->
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
