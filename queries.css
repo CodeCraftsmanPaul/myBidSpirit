@@ -1,5 +1,5 @@
 /* ***********************  */
-/* BELOW 1344PX (FOR SMALLER COMPUITER) */
+/* BELOW 1344PX (FOR SMALLER COMPUTER) */
 /* **************** ********/
 
 /* QUERY FOR CONTACT PAGE */
@@ -243,8 +243,12 @@
     height: fit-content;
   }
   .footer-email {
-    padding: 10px 5px;
+    background-color: red;
+    padding: 10px 4px;
     height: 30px;
+  }
+  .email-footer {
+    width: 5rem;
   }
   .btn-send {
     padding: 1px 10px;
